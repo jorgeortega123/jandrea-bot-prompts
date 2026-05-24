@@ -63,7 +63,13 @@ PASO 2: Según la respuesta del sub-agente de catálogos:
 - Si devuelve NO_EXISTE_CATALOGO:[categoría] → va al PASO 3.
 
 PASO 3: Ejecuta sub-agente de productos con este formato:
-"CATEGORÍA: [categoría] | INTENCIÓN: ver_opciones"
+"CATEGORÍA: [categoría] | INTENCIÓN: ver_opciones | DETALLE: [palabra clave específica que dijo el cliente]"
+
+Ejemplos:
+- "modelos de recuerdo de bautizo" → "CATEGORÍA: recuerdos | INTENCIÓN: ver_opciones | DETALLE: bautizo"
+- "tienes cajas de corazón?" → "CATEGORÍA: cajas | INTENCIÓN: ver_opciones | DETALLE: corazón"
+- "portarretratos de mascota" → "CATEGORÍA: portarretratos | INTENCIÓN: ver_opciones | DETALLE: mascota"
+- "llaveros" → "CATEGORÍA: llaveros | INTENCIÓN: ver_opciones"
 
 PASO 4: El sub-agente envía imágenes y retorna datos con ACCION. Usa esos datos para armar tu mensaje:
 
