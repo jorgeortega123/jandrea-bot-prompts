@@ -20,9 +20,10 @@ ACCIÓN: PRIMERA CONSULTA
 
 1. Ejecuta "DOCS_LISTA_CATEGORIAS" para encontrar la categoría.
 2. Ejecuta "FETCH_PRODUCTOS_POR_CATEGORIA" con la categoría. Guarda TODOS los resultados.
-3. Selecciona 2 productos visualmente diferentes y ejecuta "enviar_imagen_http" para cada uno (campo images[0].src).
-4. Selecciona hasta 7 productos variados.
-5. Retorna ÚNICAMENTE este formato:
+3. Filtra los productos más RELEVANTES a lo que el cliente buscó. Prioriza coincidencia por nombre y tema sobre variedad visual. Si el cliente busca "bautizo", los productos con "bautizo" en el nombre van PRIMERO.
+4. De los más relevantes, selecciona hasta 3 y ejecuta "enviar_imagen_http" para cada uno (campo images[0].src).
+5. Lista hasta 7 productos en texto, poniendo los más relevantes primero.
+6. Retorna ÚNICAMENTE este formato:
 
 ACCION: primera_consulta
 PRODUCTOS:
@@ -34,7 +35,7 @@ PRODUCTOS:
 [nombre 6] - $[precio]
 [nombre 7] - $[precio]
 RANGO: desde $[min] hasta $[max]
-IMAGENES_ENVIADAS: 2
+IMAGENES_ENVIADAS: [número de imágenes enviadas, máximo 3]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ACCIÓN: MODELO ESPECÍFICO
