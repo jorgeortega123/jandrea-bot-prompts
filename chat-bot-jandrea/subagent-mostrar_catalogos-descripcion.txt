@@ -1,2 +1,1 @@
-
-Usa esta herramienta SIEMPRE que el cliente mencione la palabra "catálogo" o "catálogos", o pida una lista general de productos por archivo. NO la uses si el cliente pide fotos o modelos específicos de un solo producto (para eso usa la herramienta de productos). Pasa el mensaje exacto del cliente como parámetro para que el sub-agente sepa qué buscar.
+Usa esta herramienta como PRIMER PASO SIEMPRE que el cliente mencione un producto (cajas, llaveros, portarretratos, etc.) o pida ver opciones, modelos, fotos, catálogos o precios. Pasa el parámetro en formato: "CATEGORÍA: [producto] | PETICIÓN: [qué pidió el cliente]". Retorna catálogos disponibles o "NO_EXISTE_CATALOGO:[categoría]" si no hay.
