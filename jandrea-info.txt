@@ -1,6 +1,6 @@
 # Informacion sobre Jandrea
 
-Jandrea es un emprendimiento ecuatoriano ubicado en Qito, Ecuador, dedicado a la fabricacion digital. Su nombre completo es Jandrea Art y su sitio web es www.jandrea.art y la tienda online es store.jandrea.art.
+Jandrea es un emprendimiento ecuatoriano cuyo punto de venta se encuentra en Cumbayá, Qito, Ecuador, dedicado a la fabricacion digital. Su nombre completo es Jandrea Art y su sitio web es www.jandrea.art y la tienda online es store.jandrea.art.
  Se especializa en dos servicios principales: corte laser de precision e impresion 3D.
 
 ## Que hace Jandrea
@@ -24,13 +24,12 @@ Tambien ofrecen grabado láser ademas de corte, sobre cualquiera de los material
 ## Productos que vende Jandrea
 
 Ademas de los servicios a medida, Jandrea tiene un catalogo de productos propios fabricados con sus maquinas. Los tipos de productos que ofrece incluyen:
-
 - Botones personalizados
 - Llaveros personalizados
 - Tazas sublimadas
 - Cajas decorativas y joyeros
 - Rompecabezas personalizados (de 48 piezas y 25 piezas)
-- Mousepads sublimados 
+- Mousepads sublimados
 - Gorras
 - Camisetas
 - Ceramica decorada
@@ -46,27 +45,24 @@ Los clientes pueden comprar de varias formas:
 
 Por la tienda online en www.jandrea.art, donde pueden registrarse, agregar productos al carrito, elegir direccion de envio y completar la compra.
 
-Por WhatsApp al numero +593 98 638 7530, donde pueden pedir cotizaciones, hacer consultas y realizar pedidos directamente, especialmente para proyectos personalizados de corte laser o impresion 3D.
+Por WhatsApp (Desde donde se esta respondiendo actualmente)
 
-En el punto de venta fisico para clientes que prefieren comprar en persona.
+En el punto de venta fisico para clientes que prefieren comprar en persona (Cumbayá). El punto de venta funciona de lunes a viernes de 10:30 a 17:30. Ojo: es solo un punto de venta, no el taller. Ahi se retiran productos terminados y hay poco stock a la vista, pero la fabricacion se hace en el taller.
 
 ## Envios
 
 Jandrea ofrece envios nacionales dentro de Ecuador y envios express. Tienen una pagina con la politica de envios detallada y otra con las formas de pago disponibles.
+Se envia por Servientrega, Grupo Tramaco. 
+
+Costos aproximados de envio: 
+- Dentro de Quito: $2.45 ~ $3.56 (24 - 48 horas de entrega luego de que el producto se haya elaborado)
+- Guayaquil: $6.90 ~ $9.60 (24 - 72 horas de entrega luego de que el producto se haya elaborado)
+- Otros lugares del Ecuador: desde $3.50 ~ $11.50
 
 ## Club Jandrea
-
-Jandrea tiene un programa de fidelizacion llamado Club Jandrea. Los clientes pueden registrarse con su nombre, email, telefono y cedula. El sistema maneja niveles y puntos de avance para recompensar a los clientes frecuentes. Los productos del club incluyen rompecabezas de 48 piezas, tazas sublimadas, llaveros personalizados y joyeros con grabado.
-
 ## Presencia en redes sociales
 
 Jandrea esta activo en Instagram como @jandreaec, en Facebook, y en TikTok como @jandrea_art.
-
-## Sobre la empresa
-
-Jandrea esta basado en Quito, Ecuador. Es un negocio de fabricacion digital que combina la venta de productos propios con servicios personalizados de corte laser e impresion 3D. Su identidad visual usa un color primario rojo coral y azul violeta como colores de marca.
-
-El sitio web maneja precios en dolares americanos (USD) que es la moneda de Ecuador. Las facturas se emiten sin IVA. El sistema soporta cupones de descuento con codigo, valor y fecha de expiracion.
 
 ## Preguntas frecuentes sobre Jandrea
 
@@ -76,27 +72,17 @@ No, se puede pedir desde una sola pieza.
 **Que formatos de archivo aceptan para corte laser?**
 DXF, AI, PDF, SVG y CDR.
 
-**Que formatos de archivo aceptan para impresion 3D?**
-STL, OBJ, 3MF y STEP.
-
 **Cuanto tarda una entrega?**
-El tiempo estandar es de 24 a 48 horas para corte laser. Para impresion 3D depende del tamano y complejidad, puede ser desde 2 horas hasta varios dias.
+El tiempo estandar es de 24 a 48 horas para corte laser. 
 
-**Ofrecen servicio de diseno?**
+**Ofrecen servicio de diseño?**
 Si, pueden crear el archivo vectorial o el modelo 3D desde cero, o adaptar un diseno que el cliente ya tenga.
 
-**Cobra el diseno?**
+**Cobra el diseño?**
 Depende. Si la pieza ya existe disponible gratis en internet, no hay recargo. Si es un diseno personalizado creado especialmente para el cliente, se cotiza aparte.
 
 **Hacen grabado ademas de corte?**
 Si, ofrecen tanto corte como grabado laser en todos los materiales.
 
 **Puedo enviar mi propio material?**
-Si, se puede proporcionar el material. En ese caso la tarifa es solo por el tiempo de maquina.
-
-**Ofrecen post-procesado en impresion 3D?**
-Si, ofrecen lijado, pintura, barnizado y otros acabados profesionales.
-
-**Como solicito una cotizacion?**
-Se puede solicitar por WhatsApp al +593 98 638 7530 o a traves del cotizador en la pagina web. La respuesta es en menos de 24 horas.
-
+Si, se puede proporcionar el material. En ese caso la tarifa es solo por el tiempo de máquina.
