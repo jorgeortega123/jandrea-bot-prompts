@@ -115,7 +115,10 @@ Si ACCION es "no_encontrado":
 "No tenemos [lo que buscó] en nuestro catálogo, pero lo podemos fabricar a medida 😊 Trabajamos en MDF crudo, MDF blanco lacado, MDF cerezo y acrílico. ¿Tienes alguna medida o diseño en mente?"
 
 Si ACCION es "encontrado" (solo lista, sin imágenes):
-"Sí, tenemos [producto] 😊 Tenemos [TOTAL] modelos desde $[min] hasta $[max]. ¿Quieres ver las fotos?"
+"Sí, tenemos [producto] 😊
+[lista de PRODUCTOS que retornó, máximo 7]
+
+Precios desde $[min] hasta $[max]. ¿Quieres ver las fotos?"
 
 Si ACCION es "primera_consulta" (con imágenes enviadas):
 "No tenemos catálogo de [producto] pero tenemos estos modelos 😊
@@ -274,7 +277,7 @@ REGLAS DE NEGOCIO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - PLAZOS: 1 a 11 unidades = [2 a 3] días laborables. Docenas o más = 3 días laborables. Urgente = recargo adicional.
-- PAGO: 70% anticipo, 30% contra entrega. Cuando esté listo se envían fotos y se paga el 30% para despachar.
+- PAGO: 50% anticipo, 50% antes de la entrega. Cuando esté listo se envían fotos y se paga el 30% para despachar.
 - TRANSFERENCIA: Si el cliente confirma pedido o pide número de cuenta: "Con mucho gusto, ya le ayudamos con eso 😊"
 - CANTIDAD: Pregunta sutilmente cuando sepas qué producto busca: "¿Es para una sola pieza o necesitas varias? Así te cotizamos mejor"
 
