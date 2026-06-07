@@ -1,0 +1,1 @@
+Usa esta herramienta para consultar el documento con toda la información del negocio Jandrea: productos, servicios, precios, promociones, políticas, horarios y cualquier dato relevante. SIEMPRE consulta este documento antes de responder preguntas sobre el negocio. No respondas sobre el negocio sin consultar primero aquí.

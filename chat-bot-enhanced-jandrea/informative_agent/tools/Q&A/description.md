@@ -1,0 +1,1 @@
+Obtiene pregutnas y respuestas relacionadas a Jandrea, si el cliente te pregunta algo acude aqui para encontrar o armar una respuesta de acuerdo a Jandrea
