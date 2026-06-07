@@ -22,18 +22,23 @@ Mensaje de WhatsApp
        v
 [Redirects.md]     -->  Redirige al agente correspondiente segun la intencion
        |
-       v
-[Agente]           -->  Procesa la solicitud y responde al usuario
-  |
-  +--> Puede delegar en un SUB-AGENTE si la tarea lo requiere
-         |
-         +--> Puede usar TOOLS para ejecutar acciones especificas
+       +-- [comercial_agent]  -->  Productos, catalogos, captura de datos
+       |      |
+       |      +--> Consulta catalogos primero (catalogos_agent)
+       |      |      +--> Si existe catalogo --> Propone enviarlo al cliente
+       |      |      +--> Si NO existe --> Delega a productos_agent
+       |      |
+       |      +--> Captura: producto + cantidad + detalles
+       |      +--> Deriva a asesor humano
+       |
+       +-- [info_jandrea_agent]  -->  Info de la empresa, direccion, horarios, pagos
 ```
 
 1. **Clasificador** (`Clasificator.md`): Recibe el mensaje y determina la intencion del usuario.
 2. **Router** (`Redirects.md`): En base a la intencion, delega al agente correspondiente.
-3. **Agente**: Procesa la solicitud. Puede usar tools o delegar en sub-agentes.
-4. **Respuesta**: El agente devuelve la respuesta al usuario por WhatsApp.
+3. **Agente comercial** (`comercial_agent/`): Captura informacion del cliente y deriva a asesor humano.
+4. **Agente info** (`info_jandrea_agent/`): Responde preguntas generales sobre Jandrea.
+5. **Respuesta**: El agente devuelve la respuesta al usuario por WhatsApp.
 
 ---
 
@@ -41,42 +46,42 @@ Mensaje de WhatsApp
 
 ```
 chat-bot-enhanced-jandrea/
-├── Clasificator.md                # Prompt del clasificador de intenciones
-├── Redirects.md                   # Logica de redireccion por intencion
+├── Clasificator.md                     # Prompt del clasificador de intenciones
+├── Redirects.md                        # Logica de redireccion por intencion
 │
-├── informative_agent/             # AGENTE: Informacion general
-│   ├── prompt_system.md           # System prompt del agente
-│   ├── prompt_user.md             # User prompt del agente
-│   ├── tools/                     # Herramientas del agente
-│   │   ├── Info_jandrea/
-│   │   │   └── description.md
-│   │   └── Q&A/
+├── comercial_agent/                    # AGENTE: Captura de datos y derivacion a asesor
+│   ├── prompt_system.md
+│   ├── prompt_user.md
+│   ├── tools/
+│   │   └── asignar_etiqueta/
 │   │       └── description.md
-│   └── mostrar_catalogos_subagent/  # SUB-AGENTE
-│       ├── description.md         # Cuando usar este sub-agente
+│   ├── mostrar_catalogos_subagent/     # SUB-AGENTE: Catalogos (se consulta SIEMPRE primero)
+│   │   ├── description.md
+│   │   ├── prompt_system.md
+│   │   └── tools/
+│   │       ├── enviar_catalogo_al_cliente/
+│   │       │   └── description.md
+│   │       └── obtener_catalogos_disponibles/
+│   │           └── description.md
+│   └── mostrar_products_subagent/      # SUB-AGENTE: Productos (solo si no hay catalogo)
+│       ├── description.md
 │       ├── prompt_system.md
 │       └── tools/
-│           ├── enviar_catalogo_al_cliente/
+│           ├── DOCS_LISTA_CATEGORIAS/
 │           │   └── description.md
-│           └── obtener_catalogos_disponibles/
+│           ├── enviar_imagen_http/
+│           │   └── description.md
+│           └── FETCH_PRODUCTOS_POR_CATEGORIA/
 │               └── description.md
 │
-└── quotation_agent/               # AGENTE: Cotizaciones y pedidos
+└── info_jandrea_agent/                 # AGENTE: Info general de la empresa
     ├── prompt_system.md
     ├── prompt_user.md
-    ├── tools/
-    │   └── asignar_etiqueta/
-    │       └── description.md
-    └── mostrar_products_subagent/  # SUB-AGENTE
-        ├── description.md
-        ├── prompt_system.md
-        └── tools/
-            ├── DOCS_LISTA_CATEGORIAS/
-            │   └── description.md
-            ├── enviar_imagen_http/
-            │   └── description.md
-            └── FETCH_PRODUCTOS_POR_CATEGORIA/
-                └── description.md
+    └── tools/
+        ├── Info_jandrea/
+        │   └── description.md
+        └── Q&A/
+            └── description.md
 ```
 
 ---

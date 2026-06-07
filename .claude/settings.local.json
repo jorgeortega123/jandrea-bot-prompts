@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/Jorge/Documents/chat-bot-jandrea/chat-bot-enhanced-jandrea && mkdir -p comercial_agent/tools/Info_jandrea && mkdir -p comercial_agent/tools/Q_A && mkdir -p comercial_agent/tools/asignar_etiqueta && mkdir -p comercial_agent/mostrar_catalogos_subagent/tools/enviar_catalogo_al_cliente && mkdir -p comercial_agent/mostrar_catalogos_subagent/tools/obtener_catalogos_disponibles && mkdir -p comercial_agent/mostrar_products_subagent/tools/DOCS_LISTA_CATEGORIAS && mkdir -p comercial_agent/mostrar_products_subagent/tools/enviar_imagen_http && mkdir -p comercial_agent/mostrar_products_subagent/tools/FETCH_PRODUCTOS_POR_CATEGORIA)"
+    ]
+  }
+}

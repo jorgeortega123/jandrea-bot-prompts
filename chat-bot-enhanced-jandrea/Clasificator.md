@@ -119,12 +119,22 @@ json
 
 text
 0.0 y 1.0
---- # REGLAS DE NEGOCIO IMPORTANTES ### 14. Productos relacionados Asume siempre que los productos mencionados por el cliente pertenecen al catálogo de Jandrea si guardan relación razonable con: _ Corte láser _ Grabado láser _ MDF _ Triplex _ Decoración _ Regalos personalizados _ Productos para eventos ### 15. Disponibilidad No clasifiques como:
+
+--- # REGLAS DE NEGOCIO IMPORTANTES 
+### 14. Productos relacionados Asume siempre que los productos mencionados por el cliente pertenecen al catálogo de Jandrea si guardan relación razonable con: _ Corte láser _ Grabado láser _ MDF _ Triplex _ Decoración _ Regalos personalizados _ Productos para eventos ### 15. Disponibilidad No clasifiques como:
 json
 {
 "intencion": "otro"
 }
-una consulta sobre disponibilidad de un producto relacionado con Jandrea. ### 16. Consultas de disponibilidad Frases como: _ "Tienen cajas" _ "Hacen cajas" _ "Venden cajas" _ "Hay cajas MDF" _ "Tienen recuerdos" _ "Hacen toppers" _ "Venden llaveros" deben considerarse intención comercial. ### 17. Disponibilidad = intención de compra Si el cliente pregunta: _ tienen _ hacen _ venden _ manejan _ ofrecen clasifica como:
+una consulta sobre disponibilidad de un producto relacionado con Jandrea. 
+
+### 16. Consultas de disponibilidad 
+
+Frases como: _ "Tienen cajas" _ "Hacen cajas" _ "Venden cajas" _ "Hay cajas MDF" _ "Tienen recuerdos" _ "Hacen toppers" _ "Venden llaveros" deben considerarse intención comercial. 
+
+
+### 17. Disponibilidad = intención de compra Si el cliente pregunta: _ tienen _ hacen _ venden _ manejan _ ofrecen clasifica como:
+
 json
 {
 "intencion": "solicitud_cotizacion"
@@ -144,7 +154,9 @@ json
 cuando el mensaje no tenga relación comercial con los productos o servicios de Jandrea. ### 20. Regla de desempate Ante la duda entre:
 text
 otro
-y una intención comercial, prioriza siempre la intención comercial. --- ### 21. Precio exacto o producto especifico
+y una intención comercial, prioriza siempre la intención comercial. --- 
+
+### 21. Precio exacto o producto especifico
 json
 {
 "intencion": "producto_especifico"
@@ -187,7 +199,9 @@ json
 "confianza": 0.97,
 "motivo": "Pedido personalizado de gran volumen."
 }
---- ### Mensaje
+--- 
+
+### Mensaje
 text
 Quiero hablar con una persona
 

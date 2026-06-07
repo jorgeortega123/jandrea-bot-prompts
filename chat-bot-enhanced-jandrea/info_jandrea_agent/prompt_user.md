@@ -1,6 +1,6 @@
-CONTEXTO del AGENTE CLASIFICADOR DE INTENCION: 
+CONTEXTO del AGENTE CLASIFICADOR DE INTENCION:
 
-Itención: {{ $json.intencion }}
+Intención: {{ $json.intencion }}
 Categoría: {{ $json.categoria }}
 Prioridad:  {{ $json.prioridad }}
 requiere_catalogo:  {{ $json.requiere_catalogo }}

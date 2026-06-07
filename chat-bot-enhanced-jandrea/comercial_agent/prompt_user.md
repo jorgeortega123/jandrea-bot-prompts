@@ -1,6 +1,6 @@
-CONTEXTO del AGENTE CLASIFICADOR DE INTENCION: 
+CONTEXTO del AGENTE CLASIFICADOR DE INTENCION:
 
-Itención: {{ $json.intencion }}
+Intención: {{ $json.intencion }}
 Categoría: {{ $json.categoria }}
 Prioridad:  {{ $json.prioridad }}
 requiere_catalogo:  {{ $json.requiere_catalogo }}
@@ -10,5 +10,5 @@ es_saludo: {{ $json.es_saludo }}
 confianza:  {{ $json.confianza }}
 motivo: {{ $json.motivo }}
 
-El usuario escribio explicitamente:
-{{ $('Webhook').item.json.body.conversation.messages[0].content }}
+El usuario escribió explicitamente:
+{{ $('Webhook').item.json.body.conversation.messages[0].processed_message_content }}
