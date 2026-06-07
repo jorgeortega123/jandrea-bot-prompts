@@ -1,7 +1,6 @@
-Si el cliente quiere recibir atencion de un humano agrega las etiquetas
+Usa esta herramienta cuando el cliente quiera hablar con una persona real, llamar, o necesite atención humana.
 
-"atender"
+Envía ÚNICAMENTE un array JSON con la etiqueta que corresponda:
+- ["atender"] → cuando el cliente quiere hablar con alguien, pide asesor, o quiere llamar
 
-Si quiere llamar a alguien usar
-
-"llamar"
+EJEMPLO: ["atender"]
