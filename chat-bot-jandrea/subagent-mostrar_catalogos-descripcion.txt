@@ -1,1 +1,0 @@
-Usa esta herramienta como PRIMER PASO SIEMPRE que el cliente mencione un producto (cajas, llaveros, portarretratos, etc.) o pida ver opciones, modelos, fotos, catálogos o precios. Pasa el parámetro en formato: "CATEGORÍA: [producto] | PETICIÓN: [qué pidió el cliente]". Retorna catálogos disponibles o "NO_EXISTE_CATALOGO:[categoría]" si no hay.
