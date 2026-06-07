@@ -48,7 +48,7 @@ ACCIÓN: BUSCAR (solo consulta, SIN imágenes)
      IMAGENES_ENVIADAS: 0
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ACCIÓN: MOSTRAR (enviar imágenes + lista)
+ACCIÓN: MOSTRAR PRIMERA CONSULTA (SOLO lista, SIN imágenes)
 (Cuando INTENCIÓN es ver_opciones o mostrar)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -59,16 +59,35 @@ ACCIÓN: MOSTRAR (enviar imágenes + lista)
    ACCION: no_encontrado
    BUSQUEDA: [lo que buscó el cliente]
    CATEGORIA: [categoría]
-5. Si hay resultados, selecciona hasta 3 de los más relevantes y ejecuta "enviar_imagen_http" para cada uno.
-6. Lista hasta 7 productos en texto, los más relevantes primero.
+5. Si hay resultados, lista hasta 5 productos en texto, los más relevantes primero.
+6. NO envíes imágenes en esta etapa. Solo retorna la lista.
 7. Retorna:
 
 ACCION: primera_consulta
 PRODUCTOS:
 [nombre 1] - $[precio]
 [nombre 2] - $[precio]
-[hasta 7 productos]
+[hasta 5 productos]
 RANGO: desde $[min] hasta $[max]
+TOTAL: [número de productos que coinciden]
+IMAGENES_ENVIADAS: 0
+MENSAJE: ¿Te gustaría que te envíe fotos de alguno de estos modelos?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ACCIÓN: ENVIAR IMÁGENES
+(Cuando el cliente pide ver fotos o elige un modelo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Si no tienes productos guardados, ejecuta DOCS_LISTA_CATEGORIAS y FETCH_PRODUCTOS_POR_CATEGORIA primero.
+2. Selecciona hasta 3 de los productos más relevantes que coincidan con lo que el cliente pidió.
+3. Ejecuta "enviar_imagen_http" para cada uno.
+4. Retorna:
+
+ACCION: imagenes_enviadas
+PRODUCTOS:
+[nombre 1] - $[precio]
+[nombre 2] - $[precio]
+[nombre 3] - $[precio]
 IMAGENES_ENVIADAS: [número]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
